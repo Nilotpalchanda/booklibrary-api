@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 // GET all data 
 router.get('/',(req,res)=>{
     Product.find()
-    .select('bookname bookauthor bookdescription bookimage bookcount bookprice _id')
+    .select('bookname bookauthor bookdescription bookimage bookcategory bookcount bookprice _id')
     .exec()
     .then(docs =>{
         const response = {
@@ -31,6 +31,7 @@ router.post('/',(req,res)=>{
         bookname: req.body.bookname,
         bookauthor: req.body.bookauthor,
         bookdescription:req.body.bookdescription,
+        bookcategory:req.body.bookcategory,
         bookimage:req.body.bookimage,
         bookcount:req.body.bookcount,
         bookprice: req.body.bookprice
