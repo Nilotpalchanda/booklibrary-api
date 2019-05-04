@@ -5,6 +5,7 @@ const productSchema = mongoose.Schema({
     bookname: String,
     bookauthor: String,
     bookdescription:String,
+    bookcategory:String,
     bookimage:String,
     bookcount: Number,
     bookprice: Number
