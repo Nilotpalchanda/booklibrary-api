@@ -7,6 +7,13 @@ Node Js Crud Api to add Products. Below please check list of endpoints
 3. Delete Product - https://booklibrary-api.herokuapp.com/products/ { your Product id }
 4. Get Specific product - https://booklibrary-api.herokuapp.com/products/ { your Product id }
 
+On Local server
+
+1. Add Product - http://localhost: {your Product address}/products
+2. Edit Product - http://localhost: {your Product address}/products/ {your Product id }
+3. Delete Product - http://localhost: {your Product address}/products/ { your Product id }
+4. Get Specific product - http://localhost: {your Product address}/products/ { your Product id }
+
 ## How to use the files?
 
 1. Clone this repo
